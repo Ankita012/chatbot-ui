@@ -4,16 +4,15 @@ import dummyLlogo from './assets/images/dummyLogo.png';
 
 const ChatbotUI = () => {
   const [messages, setMessages] = useState([
-    { id: 1, text: "Hello! How can I help you?", sender: "bot" }
+    { id: 1, text: "Hello! How can I help you? ", sender: "bot" }
   ]);
-
 
 const [input, setInput] = useState(""); 
 const [typing, setTypying] = useState(false); 
 
 const responses = {
   'hi': 'Hello! How can I assist you today? 😀',
-  'hello': 'Hi there! What can I do for you?',
+  'hello': 'Hi there! What can I do for you? 😀',
   'how are you': "I'm just a bot, but thanks for asking! How can I help you? 🤖",
   'bye': 'Goodbye! Have a great day! 👋',
   'help': 'Sure! What do you need help with? 💡'
